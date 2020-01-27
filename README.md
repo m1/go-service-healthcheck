@@ -25,7 +25,7 @@ event.
 
 For the `/v1/services/{id}/events` endpoint it just pulls all the events for the corresponding service id. 
 
-# How to
+# How to run
 
 1. `make local-run` or `make docker-up` or just `go build && ./go-service-healthcheck run` 
 2. `curl -X GET http://localhost:9999/v1/services`
