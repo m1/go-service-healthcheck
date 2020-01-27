@@ -13,7 +13,7 @@ It will then update the `service_events` - if the service is the same "event" i.
 event it will do nothing. However if the status of the service has changed i.e. from up to down, it will
 then update the old event ending the "uptime" and adding a new downtime event.
 
-It will then finally add a `service_tick" which basically just saves the raw data for each tick - just the
+It will then finally add a `service_tick` which basically just saves the raw data for each tick - just the
 up/down status and the response time.
 
 ## API
