@@ -251,6 +251,24 @@ Example response:
 
 Here we can see we had downtime between `1579723793` and `1579723314` but then came back up.
 
+
+## /v1/_internal/health
+
+This is the endpoint for checking the health of this api/service.
+
+Example query:
+```
+curl -X GET http://localhost:9999/v1/_internal/health
+```
+
+Example response:
+```json
+{
+  "status": 200,
+  "status_desc": "OK"
+}
+```
+
 # TODOs
 - More tests (primarily runner.go and worker.go)!
 - Replace sqlite with proper db - time series db would be a good fit (influxdb?)
